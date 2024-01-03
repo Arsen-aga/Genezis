@@ -1,4 +1,4 @@
-document.querySelectorAll(".menu a").forEach((link) => {
+document.querySelectorAll(".menu a, .popup-menu__list a").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -18,51 +18,66 @@ document.querySelectorAll(".menu a").forEach((link) => {
   });
 });
 
+//menu sticky
+if (document.querySelector(".subheader")) {
+  // инициализируем subheader
+  const subheader = document.querySelector(".subheader");
+  // Функция добавляет класс элементу в зависимости от координат окна
+  function checkСoordinatesElem(elem) {
+    // запуск функции по движению скролла
+    window.addEventListener("scroll", function () {
+      // инициализируем координаты окна по Y
+      const coordWindow = window.scrollY;
+      // если координаты окна больше 80, то добавляем класс, иначе - нет
+      coordWindow > 80
+        ? elem.classList.add("active")
+        : elem.classList.remove("active");
+    });
+  }
+
+  checkСoordinatesElem(subheader);
+}
+
 // menu
-if (document.querySelector("#menu")) {
-  const hamb = document.querySelector("#hamb");
-  const popup = document.querySelector("#popup");
-  const body = document.body;
+if (document.querySelector("#popup-menu")) {
+  // бургер
+  const humb = document.getElementById("hamb");
+  // body
+  const body = document.querySelector("body");
+  // попап меню - блок
+  const popupMenu = document.getElementById("popup-menu");
+  // массив меню элементов
+  const menuItems = document.querySelectorAll(".popup-menu__list-item");
 
-  // Клонируем меню, чтобы задать свои стили для мобильной версии
-  const menu = document.querySelector("#menu").cloneNode(1);
+  // Удаление класса active у элементов в массиве
+  const removeActive = (elems) => {
+    elems.forEach((menuItem) => menuItem.classList.remove("active"));
+  };
 
-  // При клике на иконку hamb вызываем ф-ию hambHandler
-  hamb.addEventListener("click", hambHandler);
-
-  // Выполняем действия при клике ..
-  function hambHandler(e) {
-    e.preventDefault();
-    // Переключаем стили элементов при клике
-    popup.classList.toggle("open");
-    hamb.classList.toggle("active");
+  // при клике на бургер выполняются действия
+  humb.addEventListener("click", () => {
+    // добавяем/удаляем класс active у элемента
+    popupMenu.classList.toggle("active");
+    // добавяем/удаляем класс noscroll у body
     body.classList.toggle("noscroll");
-    renderPopup();
-  }
-
-  // Здесь мы рендерим элементы в наш попап
-  function renderPopup() {
-    popup.appendChild(menu);
-  }
-
-  // Код для закрытия меню при нажатии на ссылку
-  const links = Array.from(menu.children);
-
-  // Для каждого элемента меню при клике вызываем ф-ию
-  links.forEach((link) => {
-    link.addEventListener("click", closeOnClick);
+    // удаляем у всех элементов класс active
+    removeActive(menuItems);
   });
 
-  // Закрытие попапа при клике на меню
-  function closeOnClick() {
-    popup.classList.remove("open");
-    hamb.classList.remove("active");
-    body.classList.remove("noscroll");
-  }
+  menuItems.forEach((menuItem) => {
+    // при клике на элемент выполняются действия
+    menuItem.addEventListener("click", () => {
+      // удаляем у всех элементов класс active
+      removeActive(menuItems);
+      // добавяем/удаляем класс active у элемента
+      menuItem.classList.toggle("active");
+    });
+  });
 }
 
 //lazyload
 if (document.querySelector("img[data-src]")) {
+  //lazyload
   let images = document.querySelectorAll("img[data-src]");
 
   const options = {
@@ -166,12 +181,26 @@ if (document.querySelector(".banner")) {
 if (document.querySelector(".news")) {
   const swiper2 = new Swiper(".news", {
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 10,
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      720: {
+        slidesPerView: 3,
+      },
+      960: {
+        slidesPerView: 4,
+      },
+      1140: {
+        slidesPerView: 5,
+      },
     },
   });
 }

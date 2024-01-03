@@ -31,18 +31,25 @@
             </g>
           </svg>
         </a>
-        <a class="flex gap-3 items-center text-gray font-manrope-500" href="#">
+        <a class="eye flex gap-3 items-center text-gray font-manrope-500" href="#">
           <img src="img/1x1.png" data-src="img/icons/eye.svg" alt="eye">
           <span class="block">Версия для слабовидящих</span>
         </a>
-        <a class=" font-manrope-700 text-accent text-base" href="tel:+79787325000">+7 (978) 732 50 00</a>
+        <a class="hidden xs:block font-manrope-700 text-accent text-base" href="tel:+79787325000">+7 (978) 732 50 00</a>
       </div>
     </div>
-    <div class="border-y border-divider text-sm font-manrope-600">
+    <div class="subheader border-y border-divider text-sm font-manrope-600">
       <div class="container">
         <div class="flex justify-between items-center py-2.5">
           <nav class="menu text-accent">
-            <ul class="flex gap-[25px]">
+            <div class="humb">
+              <div class="hamb__field" id="hamb">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <ul class="menu__list flex gap-[25px]">
               <li class="menu__list-item hover:border-b border-accent">
                 <a href="#">О центре</a>
                 <ul class="menu__submenu font-manrope-400">
@@ -147,17 +154,128 @@
               </li>
             </ul>
           </nav>
-          <form class="font-manrope-400" action="#" method="post">
+          <form class="search-form font-manrope-400 ml-auto mr-4 w-[40%] order-1 sm:order-none xl:w-auto 2xl:mr-10"
+            action="#" method="post">
             <div class="flex gap-2.5 items-center bg-neutrallight rounded-[50px] pr-4">
-              <input class="py-2.5 px-6 border-y border-divider rounded-[50px] outline-none text-gray" type="text"
-                placeholder="Поиск">
+              <input
+                class="py-2.5 px-4 border-y border-divider rounded-[50px] outline-none text-gray w-[90%] xl:w-auto 2xl:px-6"
+                type="text" placeholder="Поиск">
               <button>
                 <img src="img/1x1.png" data-src="img/icons/search.svg" alt="search">
               </button>
             </div>
           </form>
-          <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 text-sm" href="#">Заказать звонок</a>
+          <a class="py-2.5 px-5 bg-brand rounded-[50px] text-milk font-manrope-600 text-sm flex-none ml-auto sm:ml-0 2xl:px-[30px]"
+            href="#">Заказать звонок</a>
         </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-menu">
+      <div class="container">
+        <ul class="popup-menu__list flex gap-[25px]">
+          <li class="popup-menu__list-item">
+            <a href="#">О центре</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup-menu__list-item">
+            <a href="#">Услуги</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup-menu__list-item">
+            <a href="#">Специалисты</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup-menu__list-item">
+            <a href="#">Пациентам</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup-menu__list-item">
+            <a href="#">ОМС</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="popup-menu__list-item">
+            <a href="#">Контакты</a>
+            <ul class="popup-menu__submenu font-manrope-400">
+              <li>
+                <a href="#">Условия нахождения</a>
+              </li>
+              <li>
+                <a href="#">Внутренний распорядок</a>
+              </li>
+              <li>
+                <a href="#">Получение медицинской документации</a>
+              </li>
+              <li>
+                <a href="#">Налоговый вычет</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -170,60 +288,72 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide pb-4">
-              <div class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-banner bg-no-repeat bg-right">
-                <div class="max-w-[470px] min-h-[286px] font-manrope-500 flex flex-col">
-                  <h2 class="text-milk text-5xl mb-[30px]">
+              <div
+                class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-no-repeat bg-[length:81%] lg:bg-[270%] xl:bg-[180%] bg-none lg:bg-contain lg:bg-banner 2xl:bg-[140%] 3xl:bg-right">
+                <div
+                  class="max-w-[470px] min-h-[246px] sm:min-h-[230px] lg:min-h-max xl:min-h-[230px] 2xl:min-h-[286px] font-manrope-500 flex flex-col">
+                  <h2 class="text-milk text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-[30px]">
                     Детская офтальмология
                   </h2>
-                  <p class="text-jadelight mb-[60px] mt-auto">
+                  <p class="text-base sm:text-lg text-jadelight mb-[30px] 2xl:mb-[60px] mt-auto">
                     Выявление, лечение и профилактика <br> заболеваний глаз детей с рождения
                   </p>
-                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm" href="#">Узнать
+                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm"
+                    href="#">Узнать
                     подробности</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide pb-4">
-              <div class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-banner bg-no-repeat bg-right">
-                <div class="max-w-[470px] min-h-[286px] font-manrope-500 flex flex-col">
-                  <h2 class="text-milk text-5xl mb-[30px]">
+              <div
+                class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-no-repeat bg-[length:81%] lg:bg-[270%] xl:bg-[180%] bg-none lg:bg-contain lg:bg-banner 2xl:bg-[140%] 3xl:bg-right">
+                <div
+                  class="max-w-[470px] min-h-[246px] sm:min-h-[230px] lg:min-h-max xl:min-h-[230px] 2xl:min-h-[286px] font-manrope-500 flex flex-col">
+                  <h2 class="text-milk text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-[30px]">
                     Офтальмология
                   </h2>
-                  <p class="text-jadelight mb-[60px] mt-auto">
+                  <p class="text-base sm:text-lg text-jadelight mb-[30px] 2xl:mb-[60px] mt-auto">
                     Выявление, лечение и профилактика <br> заболеваний глаз детей с рождения
                   </p>
-                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm" href="#">Узнать
+                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm"
+                    href="#">Узнать
                     подробности</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide pb-4">
-              <div class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-banner bg-no-repeat bg-right">
-                <div class="max-w-[470px] min-h-[286px] font-manrope-500 flex flex-col">
-                  <h2 class="text-milk text-5xl mb-[30px]">
+              <div
+                class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-no-repeat bg-[length:81%] lg:bg-[270%] xl:bg-[180%] bg-none lg:bg-contain lg:bg-banner 2xl:bg-[140%] 3xl:bg-right">
+                <div
+                  class="max-w-[470px] min-h-[246px] sm:min-h-[230px] lg:min-h-max xl:min-h-[230px] 2xl:min-h-[286px] font-manrope-500 flex flex-col">
+                  <h2 class="text-milk text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-[30px]">
                     Детская офтальмология
                   </h2>
-                  <p class="text-jadelight mb-[60px] mt-auto">
+                  <p class="text-base sm:text-lg text-jadelight mb-[30px] 2xl:mb-[60px] mt-auto">
                     Выявление, лечение и профилактика <br> заболеваний глаз детей с рождения
                   </p>
-                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm" href="#">Узнать
+                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm"
+                    href="#">Узнать
                     подробности</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide pb-4">
-              <div class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-banner bg-no-repeat bg-right">
-                <div class="max-w-[470px] min-h-[286px] font-manrope-500 flex flex-col">
-                  <h2 class="text-milk text-5xl mb-[30px]">
+              <div
+                class="py-[30px] px-[50px] bg-jadegravel rounded-[10px] bg-no-repeat bg-[length:81%] lg:bg-[270%] xl:bg-[180%] bg-none lg:bg-contain lg:bg-banner 2xl:bg-[140%] 3xl:bg-right">
+                <div
+                  class="max-w-[470px] min-h-[246px] sm:min-h-[230px] lg:min-h-max xl:min-h-[230px] 2xl:min-h-[286px] font-manrope-500 flex flex-col">
+                  <h2 class="text-milk text-2xl sm:text-4xl xl:text-5xl mb-4 sm:mb-[30px]">
                     Офтальмология
                   </h2>
-                  <p class="text-jadelight mb-[60px] mt-auto">
+                  <p class="text-base sm:text-lg text-jadelight mb-4 sm:mb-[30px] 2xl:mb-[60px] mt-auto">
                     Выявление, лечение и профилактика <br> заболеваний глаз детей с рождения
                   </p>
-                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm" href="#">Узнать
+                  <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 max-w-[202px] text-sm"
+                    href="#">Узнать
                     подробности</a>
                 </div>
               </div>
@@ -231,25 +361,25 @@
 
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev hidden sm:block"></div>
+          <div class="swiper-button-next hidden sm:block"></div>
         </div>
       </div>
     </section>
 
-    <section class="mt-[100px]">
+    <section class="mt-[50px] lg:mt-[100px]">
       <div class="container">
-        <h2 class="text-accent text-4xl mb-10">
+        <h2 class="text-accent text-2xl mb-7 md:text-4xl mb:mb-10">
           Основные направления
         </h2>
-        <div class="grid grid-cols-3 gap-x-2.5 gap-y-6">
-          <div class="border border-pastel rounded-lg">
+        <div class="grid gap-x-2.5 gap-y-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/1.jpg"
                 alt="Офтальмолог">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Офтальмологическая хирургия
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -257,13 +387,13 @@
               </a>
             </div>
           </div>
-          <div class="border border-pastel rounded-lg">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/2.jpg"
                 alt="Диагностика зрения">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Диагностика зрения
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -271,13 +401,13 @@
               </a>
             </div>
           </div>
-          <div class="border border-pastel rounded-lg">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/3.jpg"
                 alt="Детская офтальмология">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Детская офтальмология
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -285,13 +415,13 @@
               </a>
             </div>
           </div>
-          <div class="border border-pastel rounded-lg">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/4.jpg"
                 alt="Лазерное лечение">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Лазерное лечение
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -299,13 +429,13 @@
               </a>
             </div>
           </div>
-          <div class="border border-pastel rounded-lg">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/5.jpg"
                 alt="Оптика">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Оптика
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -313,13 +443,13 @@
               </a>
             </div>
           </div>
-          <div class="border border-pastel rounded-lg">
+          <div class="border border-pastel rounded-lg flex flex-col justify-between">
             <div class="w-full relative pb-[40%]">
               <img class="w-full rounded-t-lg h-full absolute" src="img/1x1.png" data-src="img/content/directions/6.jpg"
                 alt="Консультация общих специалистов">
             </div>
-            <div class="p-5">
-              <h4 class="text-black font-manrope-700 text-xl mb-2.5">
+            <div class="p-5 flex flex-col justify-between h-full">
+              <h4 class="text-black font-manrope-700 text-base lg:text-xl mb-2.5">
                 Консультация общих специалистов
               </h4>
               <a class="text-sm text-accent font-manrope-400" href="#">
@@ -331,19 +461,19 @@
       </div>
     </section>
 
-    <section class="mt-[150px]">
+    <section class="mt-[50px] lg:mt-[150px]">
       <div class="container">
-        <h2 class="text-accent text-4xl mb-10">
+        <h2 class="text-accent text-2xl mb-7 md:text-4xl mb:mb-10">
           Клиники
         </h2>
-        <div class="h-[510px]" id="map"></div>
+        <div class="h-[200px] sm:h-[350px] xl:h-[510px]" id="map"></div>
       </div>
     </section>
 
-    <section class="mt-[150px] mb-[63px]">
+    <section class="mt-[50px] mb-[63px] lg:mt-[150px]">
       <div class="container">
         <div class="new-block">
-          <h2 class="text-accent text-4xl mb-10">
+          <h2 class="text-accent text-2xl mb-7 md:text-4xl mb:mb-10">
             Новости
           </h2>
           <div class="swiper news mb-10">
@@ -352,7 +482,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/1.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/1.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -367,7 +498,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/2.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/2.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -382,7 +514,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/3.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/3.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -397,7 +530,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/4.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/4.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -412,7 +546,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/5.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/5.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -427,7 +562,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/1.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/1.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -442,7 +578,8 @@
               <div class="swiper-slide">
                 <a class="block border border-pastel rounded-[10px]" href="#">
                   <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png" data-src="img/content/news/2.jpg" alt="img">
+                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
+                      data-src="img/content/news/2.jpg" alt="img">
                   </div>
                   <div class="pt-5 pl-5 pr-[15px] pb-[25px]">
                     <p class="text-gray font-manrope-400 text-xs mb-[5px]">
@@ -462,7 +599,8 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
-            <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 text-sm" href="#">Все новости</a>
+            <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 text-sm" href="#">Все
+              новости</a>
           </div>
         </div>
       </div>
@@ -471,8 +609,8 @@
 
   <footer class="bg-accent text-jadelight">
     <div class="container">
-      <div class="pt-10 pb-11 flex justify-between text-sm font-manrope-400">
-        <div>
+      <div class="pt-10 pb-11 flex justify-around text-sm font-manrope-400 flex-wrap 2xl:gap-5">
+        <div class="w-[218px] flex-auto mb-8">
           <a href="#">
             <svg width="185" height="40" viewBox="0 0 185 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_313_111)">
@@ -492,134 +630,136 @@
             ООО «ЦЕНТР ЗРЕНИЯ ГЕНЕЗИС»
           </p>
         </div>
-        <div class="flex flex-col">
-          <div class="mb-auto max-w-fit">
-            <h5 class="font-manrope-600 text-milk pb-[15px] mb-[15px] border-b border-milk">
-              Информация
-            </h5>
-            <ul class="grid gap-2">
-              <li>
-                <a href="#">
-                  Политика обработки персональных данных
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Пользовательское соглашение
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Вакансии
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Лицензии
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Карта сайта
-                </a>
-              </li>
-            </ul>
+        <div class="2xl:max-w-[785px] w-full flex justify-between gap-5 flex-wrap">
+          <div class="flex flex-col mr-auto gap-5">
+            <div class="mb-auto max-w-fit">
+              <h5 class="font-manrope-600 text-milk pb-[15px] mb-[15px] border-b border-milk">
+                Информация
+              </h5>
+              <ul class="grid gap-2">
+                <li>
+                  <a href="#">
+                    Политика обработки персональных данных
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Пользовательское соглашение
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Вакансии
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Лицензии
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Карта сайта
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="max-w-fit">
+              <h5 class="font-manrope-600 text-milk pb-[15px] mb-[15px] border-b border-milk">
+                Пациентам
+              </h5>
+              <ul class="grid gap-2">
+                <li>
+                  <a href="#">
+                    Часто задаваемые вопросы
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Налоговый вычет
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    ОМС
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Надзорные органы
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="max-w-fit">
-            <h5 class="font-manrope-600 text-milk pb-[15px] mb-[15px] border-b border-milk">
-              Пациентам
+            <h5 class="font-manrope-600 text-milk pb-[15px] mb-[25px] border-b border-milk">
+              Контакты:
             </h5>
-            <ul class="grid gap-2">
-              <li>
-                <a href="#">
-                  Часто задаваемые вопросы
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Налоговый вычет
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  ОМС
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Надзорные органы
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="max-w-fit">
-          <h5 class="font-manrope-600 text-milk pb-[15px] mb-[25px] border-b border-milk">
-            Контакты:
-          </h5>
-          <div class="grid gap-[25px]">
-            <div>
-              <h6 class="font-manrope-600 text-milk mb-2.5">
-                Телефоны:
-              </h6>
-              <ul>
-                <li>
-                  <a href="tel:+79787325000">+7 (978) 732-50-00</a>
-                </li>
-                <li>
-                  <a href="tel:+73652604900">+7 (3652) 604-900</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6 class="font-manrope-600 text-milk mb-2.5">
-                Адрес:
-              </h6>
-              <address class="not-italic">
-                г. Симферополь, ул. Киевская, 153в
-              </address>
-              <a href="mailto:priemnaya@genesis82.ru">priemnaya@genesis82.ru</a>
-            </div>
-            <div>
-              <h6 class="font-manrope-600 text-milk mb-2.5">
-                График работы:
-              </h6>
-              <p>
-                Пн-Пт с 09:00-19:00
-              </p>
-              <p>
-                Сб-Вс - выходной
-              </p>
-            </div>
-            <div>
-              <h6 class="font-manrope-600 text-milk mb-2.5">
-                Мы в соцсетях
-              </h6>
-              <ul class="flex gap-2">
-                <li>
-                  <a href="#">
-                    <img src="img/1x1.png" data-src="img/icons/vk.svg" alt="vk.com">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/1x1.png" data-src="img/icons/telegram.svg" alt="telegram">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/1x1.png" data-src="img/icons/whatsapp.svg" alt="whatsapp">
-                  </a>
-                </li>
-              </ul>
+            <div class="grid gap-[25px]">
+              <div>
+                <h6 class="font-manrope-600 text-milk mb-2.5">
+                  Телефоны:
+                </h6>
+                <ul>
+                  <li>
+                    <a href="tel:+79787325000">+7 (978) 732-50-00</a>
+                  </li>
+                  <li>
+                    <a href="tel:+73652604900">+7 (3652) 604-900</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6 class="font-manrope-600 text-milk mb-2.5">
+                  Адрес:
+                </h6>
+                <address class="not-italic">
+                  г. Симферополь, ул. Киевская, 153в
+                </address>
+                <a href="mailto:priemnaya@genesis82.ru">priemnaya@genesis82.ru</a>
+              </div>
+              <div>
+                <h6 class="font-manrope-600 text-milk mb-2.5">
+                  График работы:
+                </h6>
+                <p>
+                  Пн-Пт с 09:00-19:00
+                </p>
+                <p>
+                  Сб-Вс - выходной
+                </p>
+              </div>
+              <div>
+                <h6 class="font-manrope-600 text-milk mb-2.5">
+                  Мы в соцсетях
+                </h6>
+                <ul class="flex gap-2">
+                  <li>
+                    <a href="#">
+                      <img src="img/1x1.png" data-src="img/icons/vk.svg" alt="vk.com">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/1x1.png" data-src="img/icons/telegram.svg" alt="telegram">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/1x1.png" data-src="img/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="border-t border-milk pt-[15px] pb-5 flex items-center text-xs font-manrope-400">
+      <!-- <div class="border-t border-milk pt-[15px] pb-5 flex items-center text-xs font-manrope-400">
         <p class="text-milk mr-[75px]">© 2023, Группа компаний «Генезис» Все права защищены </p>
         <a class="uppercase" href="#">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА.</a>
-      </div>
+      </div> -->
     </div>
   </footer>
 
