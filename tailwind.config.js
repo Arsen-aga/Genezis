@@ -43,7 +43,7 @@
          black: "#202020",
        },
        backgroundImage: {
-         banner: "url('/app/img/banner/1.png')",
+         banner: "url('../img/banner/1.png')",
        },
      },
    },

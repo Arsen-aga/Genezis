@@ -1550,7 +1550,7 @@ img {
   }
 
   .lg\:bg-banner {
-    background-image: url('/app/img/banner/1.png');
+    background-image: url('../img/banner/1.png');
   }
 
   .lg\:bg-contain {
