@@ -22,6 +22,8 @@ document.querySelectorAll(".menu a, .popup-menu__list a").forEach((link) => {
 if (document.querySelector(".subheader")) {
   // инициализируем subheader
   const subheader = document.querySelector(".subheader");
+  // попап меню - блок
+  const popupMenu = document.getElementById("popup-menu");
   // Функция добавляет класс элементу в зависимости от координат окна
   function checkСoordinatesElem(elem) {
     // запуск функции по движению скролла
@@ -30,8 +32,9 @@ if (document.querySelector(".subheader")) {
       const coordWindow = window.scrollY;
       // если координаты окна больше 80, то добавляем класс, иначе - нет
       coordWindow > 80
-        ? elem.classList.add("active")
-        : elem.classList.remove("active");
+        ? (elem.classList.add("active"), popupMenu.classList.add("top-scroll"))
+        : (elem.classList.remove("active"),
+          popupMenu.classList.remove("top-scroll"));
     });
   }
 
@@ -46,32 +49,15 @@ if (document.querySelector("#popup-menu")) {
   const body = document.querySelector("body");
   // попап меню - блок
   const popupMenu = document.getElementById("popup-menu");
-  // массив меню элементов
-  const menuItems = document.querySelectorAll(".popup-menu__list-item");
-
-  // Удаление класса active у элементов в массиве
-  const removeActive = (elems) => {
-    elems.forEach((menuItem) => menuItem.classList.remove("active"));
-  };
 
   // при клике на бургер выполняются действия
   humb.addEventListener("click", () => {
     // добавяем/удаляем класс active у элемента
     popupMenu.classList.toggle("active");
+    // добавяем/удаляем класс active бургеру
+    humb.classList.toggle("active");
     // добавяем/удаляем класс noscroll у body
     body.classList.toggle("noscroll");
-    // удаляем у всех элементов класс active
-    removeActive(menuItems);
-  });
-
-  menuItems.forEach((menuItem) => {
-    // при клике на элемент выполняются действия
-    menuItem.addEventListener("click", () => {
-      // удаляем у всех элементов класс active
-      removeActive(menuItems);
-      // добавяем/удаляем класс active у элемента
-      menuItem.classList.toggle("active");
-    });
   });
 }
 
