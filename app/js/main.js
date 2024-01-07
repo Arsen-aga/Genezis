@@ -190,3 +190,26 @@ if (document.querySelector(".news")) {
     },
   });
 }
+if (document.querySelector(".specialists-swiper")) {
+  const swiper2 = new Swiper(".specialists-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      720: {
+        slidesPerView: 3,
+      },
+      960: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}

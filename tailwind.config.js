@@ -28,7 +28,7 @@
      },
      extend: {
        colors: {
-         accent: "#00587A",
+         accent: "#157EAA",
          default: "#202020",
          brand: "#EF7F1A",
          milk: "#FFFAFA",
@@ -40,7 +40,6 @@
          neutral: "#7A7687",
          alpha: "#FFFAFAB2",
          pastel: "#D5D1E1",
-         black: "#202020",
        },
        backgroundImage: {
          banner: "url('../img/banner/1.png')",

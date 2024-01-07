@@ -43,7 +43,7 @@
 }
 
 :root {
-  --accent: #00587A;
+  --accent: #157EAA;
   --default: #202020;
   --brand: #EF7F1A;
   --milk: #FFFAFA;
@@ -55,7 +55,6 @@
   --neutral: #7A7687;
   --alpha: #FFFAFAB2;
   --pastel: #D5D1E1;
-  --black: #202020;
 }
 
 body {
@@ -69,6 +68,8 @@ body {
 img {
   object-fit: cover;
 }
+
+/* header */
 
 .menu__list-item {
   position: relative;
@@ -302,7 +303,7 @@ img {
 }
 
 
-
+/* swiper */
 
 .banner .swiper-pagination {
   bottom: 0;
@@ -330,10 +331,8 @@ img {
   background-color: var(--gray);
 }
 
-.banner .swiper-button-prev,
-.banner .swiper-button-next,
-.new-block .swiper-button-prev,
-.new-block .swiper-button-next {
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
   background-image: url('../img/icons/arrow.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -348,22 +347,17 @@ img {
   border: 1px solid var(--pastel);
 }
 
-.banner .swiper-button-prev:hover,
-.banner .swiper-button-next:hover,
-.new-block .swiper-button-prev:hover,
-.new-block .swiper-button-next:hover {
+.slider .swiper-button-prev:hover,
+.slider .swiper-button-next:hover{
   border: 1px solid var(--jadegravel);
 }
 
-.banner .swiper-button-prev:focus,
-.banner .swiper-button-next:focus,
-.new-block .swiper-button-prev:focus,
-.new-block .swiper-button-next:focus {
+.slider .swiper-button-prev:focus,
+.slider .swiper-button-next:focus{
   border: 2px solid var(--jadegravel);
 }
 
-.banner .swiper-button-next,
-.new-block .swiper-button-next {
+.slider .swiper-button-next{
   transform: rotate(180deg);
 }
 
@@ -371,16 +365,28 @@ img {
   right: 111px;
 }
 
-.banner .swiper-button-prev::after,
-.banner .swiper-button-next::after,
-.new-block .swiper-button-prev::after,
-.new-block .swiper-button-next::after {
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
   content: '';
   font-size: 0;
   line-height: 0;
 }
 
+.new-block .swiper-button-prev,
+.new-block .swiper-button-next,
+.specialists .swiper-button-prev,
+.specialists .swiper-button-next {
+  bottom: 0;
+  right: auto;
+  left: 0;
+}
 
+.new-block .swiper-button-next,
+.specialists .swiper-button-next {
+  left: 51px;
+}
+
+/* map */
 
 .map-marker {
   width: 45px;
@@ -394,14 +400,3 @@ img {
 }
 
 
-
-.new-block .swiper-button-prev,
-.new-block .swiper-button-next {
-  bottom: 0;
-  right: auto;
-  left: 0;
-}
-
-.new-block .swiper-button-next {
-  left: 51px;
-}
