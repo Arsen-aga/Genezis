@@ -213,3 +213,50 @@ if (document.querySelector(".specialists-swiper")) {
     },
   });
 }
+
+//tabs
+if (document.querySelector(".tabs")) {
+  const tabs = document.querySelector(".tabs");
+  const tabsBtn = document.querySelectorAll(".tabs-btn");
+  const filterItems = document.querySelectorAll(".filter-items div");
+  const filterSearch = document.querySelector(".filter-search");
+
+  filterSearch.addEventListener("input", (event) => {
+    const inpValue = event.target.value.toLowerCase();
+    filterItems.forEach((item) => {
+      const itemTitle = item.querySelector("h4").textContent.toLowerCase();
+      if (itemTitle.includes(inpValue)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+
+  tabsBtn.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const filter = e.currentTarget.dataset.filter;
+
+      tabsBtn.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      btn.classList.add("active");
+
+      filterItems.forEach((item) => {
+        if (filter === "all") {
+          item.style.display = "block";
+        } else if (item.classList.contains(filter)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // filterItems.forEach((item) => {
+  //   item.classList.contains("cat-b")
+  //     ? (item.style.display = "block")
+  //     : (item.style.display = "none");
+  // });
+}

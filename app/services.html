@@ -281,239 +281,336 @@
     </div>
   </header>
 
-  <main class="mt-5">
+  <main class="pt-10 pb-[50px] lg:pb-[100px] bg-white">
 
-    <div>
+    <section>
       <div class="container">
-        <div class="flex items-center gap-2 text-sm flex-wrap">
-          <a class="text-gray flex gap-2 items-center" href="#">
-            О центре
-            <span>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Vector" d="M8 14L12 10L8 6" stroke="#686868" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </span>
-          </a>
-          <a href="#">
-            Общая информация
-          </a>
-        </div>
-      </div>
-    </div>
+        <h1 class="text-3xl lg:text-5xl text-accent mb-6 lg:mb-[54px]">
+          Медицинские услуги
+        </h1>
 
-    <section class="mt-10">
-      <div class="container">
-        <div class="relative pb-[35.23%]">
-          <img class="absolute w-full h-full" src="img/1x1.png" data-src="img/content/info/info-top.jpg" alt="">
-        </div>
-        <div class="mt-10 grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-10">
-          <h1 class="uppercase text-brand text-2xl md:text-4xl">
-            КЛИНИКА ЗРЕНИЯ ГЕНЕЗИС
-          </h1>
-          <div class="grid gap-2 md:gap-4">
-            <p>
-              Клиника Зрения Genesis – офтальмологическая клиника европейского класса
-            </p>
-            <p>
-              25 – летний опыт работы клиники. Лучшие офтальмо-хирурги Крыма. Более 30 000 блестяще проведенных
-              операций, которые дали
-              возможность нашим пациентам почувствовать все преимущества жизни с полноценным зрением
-            </p>
-            <p>
-              Наша клиника известна своими непререкаемыми стандартами и стремлением к превосходству. С широкой гаммой
-              сертифицированных врачей и специалистов, клиника Genesis предлагает инновационные и передовые методы
-              лечения и коррекции
-              зрения.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="grid grid-cols-1 gap-5 xl:grid-cols-[320px_1fr] xl:gap-2.5">
+          <aside>
+            <form class="mb-5" action="#">
+              <input
+                class="px-[21px] py-3 text-sm font-manrope-400 placeholder:text-gray w-full border border-pastel outline-none filter-search"
+                type="text" placeholder="Поиск услуг">
+            </form>
+            <div class="tabs font-manrope-400 text-sm text-accent">
 
-    <section class="mt-[50px] lg:mt-[100px] xl:mt-[150px]">
-      <div class="container">
-        <div class="grid grid-cols-1 gap-10 xl:grid-cols-2 xl:gap-2.5">
-          <div>
-            <h2 class="text-accent text-3xl mb-[15px]">
-              Цифры и факты
-            </h2>
-            <p class="text-gray text-base">
-              Мы работаем на результат
-            </p>
-          </div>
-          <div>
-            <div class="border-b border-divider pb-5 flex items-center gap-2.5">
-              <h4 class="text-accent text-3xl w-[120px] md:text-5xl md:w-[210px]">
-                25 лет
+              <div
+                class="tabs-btn active pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="all">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Все услуги
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="cat-a">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Офтальмологическая хирургия
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="cat-b">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Диагностика зрения
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="cat-c">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Детская офтальмология
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="cat-d">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Лазерное лечение
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel border-b-0 flex justify-between items-center cursor-pointer" data-filter="cat-e">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Оптика
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+              <div
+                class="tabs-btn pt-[11px] pb-[13px] pl-5 pr-[18px] border border-pastel flex justify-between items-center cursor-pointer" data-filter="cat-f">
+                <p class="max-w-[208px] sm:max-w-max xl:max-w-[208px]">
+                  Консультация общих специалистов
+                </p>
+                <span class="hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 14.5217L12 10.5217L8 6.52173" stroke="#157EAA" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+
+            </div>
+          </aside>
+
+          <div class="filter-items grid gap-[30px] font-manrope-400">
+
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-a">
+              <h4 class="text-2xl text-accent mb-6">
+                Офтальмологическая хирургия
               </h4>
-              <p class="text-xs sm:text-lg">
-                помогаем нашим пациентам
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
               </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 3
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 4
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 5, вот длинное название в середине другого столбца
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 6
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 7
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 8
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 9, тут пример оооооооочень длинного названия, ведь оно может занимать даже четыре строки
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="border-b border-divider py-5 flex items-center gap-2.5">
-              <h4 class="text-accent text-3xl w-[120px] md:text-5xl md:w-[210px]">
-                4
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-b">
+              <h4 class="text-2xl text-accent mb-6">
+                Диагностика зрения
               </h4>
-              <p class="text-xs sm:text-lg">
-                клиники
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
               </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 3
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="border-b border-divider py-5 flex items-center gap-2.5">
-              <h4 class="text-accent text-3xl w-[120px] md:text-5xl md:w-[210px]">
-                30 000+
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-c">
+              <h4 class="text-2xl text-accent mb-6">
+                Детская офтальмология
               </h4>
-              <p class="text-xs sm:text-lg">
-                успешных операций
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
               </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 3
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 4
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 5, вот длинное название в середине другого столбца
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 6
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-d">
+              <h4 class="text-2xl text-accent mb-6">
+                Лазерное лечение
+              </h4>
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
+              </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 3
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-e">
+              <h4 class="text-2xl text-accent mb-6">
+                Оптика
+              </h4>
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
+              </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-sm border border-pastel px-4 pt-6 pb-[30px] h-fit cat-f">
+              <h4 class="text-2xl text-accent mb-6">
+                Консультация общих специалистов
+              </h4>
+              <p class="py-2.5">
+                Можно добавить краткое описание категории. Текст - 2-3 строки, Проводятся высокотехнологичные
+                исследования
+                на оборудовании экспертного класса.
+              </p>
+              <ul class="pt-[30px] border-t border-pastel grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-[15px] text-accent">
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 1, ее название может занимать несколько строк, две или даже три
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 2
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 3
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 4
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 5, вот длинное название в середине другого столбца
+                  </a>
+                </li>
+                <li class="pl-[15px]">
+                  <a href="#">
+                    Услуга 6
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="my-[50px] lg:my-[100px] xl:mt-[150px]">
-      <div class="container">
-        <div class="slider specialists">
-          <h2 class="text-accent text-2xl mb-7 md:text-4xl mb:mb-10">
-            Специалисты
-          </h2>
-          <div class="swiper specialists-swiper mb-10">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/1.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/2.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/3.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/4.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/1.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a class="block border border-pastel rounded-[10px]" href="#">
-                  <div class="relative pb-[78.78%]">
-                    <img class="w-full rounded-t-[10px] absolute h-full" src="img/1x1.png"
-                      data-src="img/content/specialists/2.jpg" alt="specialist">
-                  </div>
-                  <div class="py-5 px-[21px]">
-                    <h5 class="font-manrope-600 mb-2.5">
-                      Иванов Иван Иванович
-                    </h5>
-                    <h6 class="text-sm font-manrope-600 text-accent mb-2.5">
-                      ОФТАЛЬМОЛОГ
-                    </h6>
-                    <div class="text-gray font-manrope-400 text-xs uppercase">
-                      <p class="mb-[5px]">Врач высшей категории, к,м,н,</p>
-                      <p>Опыт работы: 20 лет</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
 
 
-            </div>
-          </div>
-          <div class="flex justify-end relative items-center">
-            <div class="absolute left-0 h-[41px]">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <a class="py-2.5 px-[30px] bg-brand rounded-[50px] text-milk font-manrope-600 text-sm"
-              href="#">Записаться</a>
-          </div>
-        </div>
       </div>
     </section>
 

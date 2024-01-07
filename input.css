@@ -400,3 +400,19 @@ img {
 }
 
 
+/* tabs */
+
+/* .tabs-btn:hover >p{
+  font-family: 'Manrope-SemiBold';
+}
+.tabs-btn:hover >span{
+  display: block;
+} */
+
+.tabs-btn.active > p{
+  font-family: 'Manrope-SemiBold';
+}
+
+.tabs-btn.active>span{
+  display: block;
+}
