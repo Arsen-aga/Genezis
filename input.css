@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Manrope-ExtraLight';
+  font-weight: 200;
+  font-style: normal;
+  src: local('Manrope-ExtraLight'),
+    url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Manrope-ExtraLight.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Manrope-Regular';
   font-weight: 400;
   font-style: normal;
@@ -375,14 +385,17 @@ img {
 .new-block .swiper-button-prev,
 .new-block .swiper-button-next,
 .specialists .swiper-button-prev,
-.specialists .swiper-button-next {
+.specialists .swiper-button-next,
+.service .swiper-button-prev,
+.service .swiper-button-next {
   bottom: 0;
   right: auto;
   left: 0;
 }
 
 .new-block .swiper-button-next,
-.specialists .swiper-button-next {
+.specialists .swiper-button-next,
+.service .swiper-button-next {
   left: 51px;
 }
 

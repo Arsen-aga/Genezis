@@ -213,6 +213,29 @@ if (document.querySelector(".specialists-swiper")) {
     },
   });
 }
+if (document.querySelector(".service-swiper")) {
+  const swiper2 = new Swiper(".service-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      468: {
+        slidesPerView: 2,
+      },
+      720: {
+        slidesPerView: 3,
+      },
+      960: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}
 
 //tabs
 if (document.querySelector(".tabs")) {

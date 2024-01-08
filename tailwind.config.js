@@ -25,6 +25,7 @@
        "manrope-600": "Manrope-SemiBold",
        "manrope-500": "Manrope-Medium",
        "manrope-400": "Manrope-Regular",
+       "manrope-200": "Manrope-ExtraLight",
      },
      extend: {
        colors: {
@@ -43,6 +44,7 @@
        },
        backgroundImage: {
          banner: "url('../img/banner/1.png')",
+         "service-top": "url('../img/content/service/bg.jpg')",
        },
      },
    },

@@ -663,16 +663,16 @@ video {
   margin-bottom: 15px;
 }
 
+.mb-\[17px\] {
+  margin-bottom: 17px;
+}
+
 .mb-\[25px\] {
   margin-bottom: 25px;
 }
 
 .mb-\[30px\] {
   margin-bottom: 30px;
-}
-
-.mb-\[54px\] {
-  margin-bottom: 54px;
 }
 
 .mb-\[5px\] {
@@ -695,6 +695,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-9 {
+  margin-right: 2.25rem;
+}
+
 .mr-\[75px\] {
   margin-right: 75px;
 }
@@ -713,6 +717,10 @@ video {
 
 .mt-2\.5 {
   margin-top: 0.625rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-5 {
@@ -749,6 +757,10 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[2px\] {
+  height: 2px;
 }
 
 .h-\[41px\] {
@@ -788,6 +800,10 @@ video {
   width: 100%;
 }
 
+.min-w-\[30px\] {
+  min-width: 30px;
+}
+
 .max-w-\[202px\] {
   max-width: 202px;
 }
@@ -800,14 +816,13 @@ video {
   max-width: 470px;
 }
 
+.max-w-\[555px\] {
+  max-width: 555px;
+}
+
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 .flex-auto {
@@ -824,46 +839,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[320px_1fr\] {
-  grid-template-columns: 320px 1fr;
-}
-
-.grid-cols-\[repeat\(auto-fit\)\2c 1fr\] {
-  grid-template-columns: repeat(auto-fit) 1fr;
-}
-
-.grid-cols-\[repeat\(auto-fit\2c 1fr\)\] {
-  grid-template-columns: repeat(auto-fit,1fr);
-}
-
-.grid-cols-\[repeat\(auto-fit\2c _1fr\)\] {
-  grid-template-columns: repeat(auto-fit, 1fr);
-}
-
-.grid-cols-\[repeat\(auto-fit\2c _minmax\(100px\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c _minmax\(100px\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c _minmax\(250px\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-\[repeat\(auto-fill\2c _minmax\(250px\2c _1fr\)\)\] {
-  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .flex-col {
@@ -967,6 +942,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1032,8 +1011,16 @@ video {
   background-image: none;
 }
 
+.bg-service-top {
+  background-image: url('../img/content/service/bg.jpg');
+}
+
 .bg-\[length\:81\%\] {
   background-size: 81%;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-no-repeat {
@@ -1094,6 +1081,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1139,6 +1131,10 @@ video {
   padding-bottom: 50px;
 }
 
+.pb-\[73px\] {
+  padding-bottom: 73px;
+}
+
 .pb-\[78\.78\%\] {
   padding-bottom: 78.78%;
 }
@@ -1151,6 +1147,10 @@ video {
   padding-left: 15px;
 }
 
+.pl-\[70px\] {
+  padding-left: 70px;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1161,6 +1161,10 @@ video {
 
 .pr-\[18px\] {
   padding-right: 18px;
+}
+
+.pr-\[30px\] {
+  padding-right: 30px;
 }
 
 .pt-10 {
@@ -1183,8 +1187,28 @@ video {
   padding-top: 15px;
 }
 
+.pt-\[25px\] {
+  padding-top: 25px;
+}
+
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pt-\[72px\] {
+  padding-top: 72px;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.font-manrope-200 {
+  font-family: Manrope-ExtraLight;
 }
 
 .font-manrope-400 {
@@ -1211,6 +1235,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1284,6 +1313,20 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@font-face {
+  font-family: 'Manrope-ExtraLight';
+
+  font-weight: 200;
+
+  font-style: normal;
+
+  src: local('Manrope-ExtraLight'),
+    url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Manrope-ExtraLight.woff') format('woff');
+
+  font-display: swap;
 }
 
 @font-face {
@@ -1669,14 +1712,17 @@ img {
 .new-block .swiper-button-prev,
 .new-block .swiper-button-next,
 .specialists .swiper-button-prev,
-.specialists .swiper-button-next {
+.specialists .swiper-button-next,
+.service .swiper-button-prev,
+.service .swiper-button-next {
   bottom: 0;
   right: auto;
   left: 0;
 }
 
 .new-block .swiper-button-next,
-.specialists .swiper-button-next {
+.specialists .swiper-button-next,
+.service .swiper-button-next {
   left: 51px;
 }
 
@@ -1816,16 +1862,20 @@ img {
     margin-bottom: 100px;
   }
 
+  .lg\:mb-\[54px\] {
+    margin-bottom: 54px;
+  }
+
   .lg\:mt-\[100px\] {
     margin-top: 100px;
   }
 
-  .lg\:mt-\[150px\] {
-    margin-top: 150px;
+  .lg\:mt-\[124px\] {
+    margin-top: 124px;
   }
 
-  .lg\:mb-\[54px\] {
-    margin-bottom: 54px;
+  .lg\:mt-\[150px\] {
+    margin-top: 150px;
   }
 
   .lg\:min-h-max {
@@ -1857,14 +1907,14 @@ img {
     padding-bottom: 100px;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
