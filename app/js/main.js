@@ -283,3 +283,14 @@ if (document.querySelector(".tabs")) {
   //     : (item.style.display = "none");
   // });
 }
+
+// popup-call
+
+if (document.querySelector("#popup-call")) {
+  const pageBtn = document.querySelector("#page-btn");
+  const popup = document.querySelector("#popup-call");
+
+  pageBtn.addEventListener("click", () => {
+    popup.classList.add("active");
+  });
+}
