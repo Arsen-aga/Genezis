@@ -41,6 +41,7 @@
          neutral: "#7A7687",
          alpha: "#FFFAFAB2",
          pastel: "#D5D1E1",
+         rose: "#FFF5F6",
        },
        backgroundImage: {
          banner: "url('../img/banner/1.png')",
