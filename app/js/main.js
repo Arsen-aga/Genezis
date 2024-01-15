@@ -285,7 +285,6 @@ if (document.querySelector(".tabs")) {
 }
 
 // popup-call
-
 if (document.querySelector("#popup-call")) {
   const pageBtns = document.querySelectorAll(".request-a-call");
   const popupCall = document.querySelector("#popup-call");
@@ -321,7 +320,6 @@ if (document.querySelector("#popup-call")) {
 }
 
 // list-services
-
 if (document.querySelector(".list-services")) {
   const openBtns = document.querySelectorAll(".open-all-services");
   const listServiceItems = document.querySelectorAll(".list-services__item");
