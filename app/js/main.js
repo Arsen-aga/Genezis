@@ -318,6 +318,21 @@ if (document.querySelector("#popup-call")) {
   changePopup(popupSent, addClassElem, popupCallSendBtn);
   changePopup(popupSent, removeClassElem, ...popupCloseBtn);
   changePopup(popupSent, removeClassElem, ...popupCloseBg);
-
 }
 
+// list-services
+
+if (document.querySelector(".list-services")) {
+  const openBtns = document.querySelectorAll(".open-all-services");
+  const listServiceItems = document.querySelectorAll(".list-services__item");
+
+
+  openBtns.forEach((btn, i) => {
+    btn.addEventListener('click', ()=>{
+      listServiceItems.forEach((item, j) => {
+        i === j ? item.classList.add("active") : item.classList.remove("active");
+      })
+    })
+  })
+
+}

@@ -492,3 +492,26 @@ img {
 .checkbox-main:checked:disabled+.checkbox-label .checkbox-label__inner svg{
   display: block;
 }
+
+
+/*  service list */
+
+.sublist-services{
+  display: none;
+}
+
+.list-services__item:nth-child(even){
+  background-color: var(--divider);
+}
+
+.list-services__item.active .sublist-services{
+  display: block;
+}
+
+.list-services__item.active .open-all-services path{
+  transition: all .3s;
+}
+
+.list-services__item.active .open-all-services path:nth-child(3){
+  opacity: 0;
+}
